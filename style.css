@@ -1,0 +1,191 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url(./shara\ desert.jpg);
+    color: white;
+}
+
+.navbar{
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin: 0 150px 0 100px; */
+}
+
+.logo{
+    width: 50px;
+    height: 50px;
+    position:absolute;
+    top: 35px;
+    left: 7%;
+}
+
+.menu{
+    cursor: pointer;
+    font-size: small;
+    position:absolute;
+    top: 35px;
+    right: 12%;
+}
+
+a{
+    margin: 0 35px;
+    text-decoration: none;
+    color: white;
+}
+
+.hamburger{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 25px;
+    right: 8%;
+}
+
+.outer-container{
+    height: 500px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0px 100px;
+}
+
+.container2{
+    margin-top: 50px;
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 60px;
+    row-gap: 30px;
+}
+
+.container1{
+    width: 50%;
+    margin-top: 20px;
+    margin-right: 50px;
+}
+
+.container1 h1{
+    font-size: 100px;
+}
+
+.container1 p{
+    line-height: 30px;
+}
+
+button{
+    font-family: 'Times New Roman', Times, serif;
+    width: 200px;
+    height: 40px;
+    border: none;
+    border-radius: 25px;
+}
+
+.box{
+    box-sizing: border-box;
+    width: 240px;
+    height: 260px;
+    background-size: cover;
+    border-radius: 10px;
+    padding: 20px 30px;
+    font-size: small;
+    line-height: 15px;
+    text-shadow: -1px -1px 5px rgb(152, 152, 152);
+    transition-duration: 0.5s;
+    background-position: center;
+}
+
+.box p{
+    font-size: x-small;
+    line-height: 30px;
+}
+
+.box1{
+    background-image: url(./pic-1.png);
+}
+
+.box2{
+    background-image: url(./pic-2.png);
+}
+
+.box3{
+    background-image: url(./pic-3.png);
+}
+
+.box4{
+    background-image: url(./pic-4.png);
+}
+
+.box:hover{
+    cursor: pointer;
+    transform: translate(0, -15px);
+}
+
+
+@media screen and (width < 1330px){
+
+    nav{
+        margin: 0 70px;
+    }
+    .outer-container{
+        display: block;
+        height: auto;
+        margin: 0 70px;
+    }
+
+    .container1{
+        width: auto;
+        margin: 10px 0;
+    }
+
+    .container1 h1{
+        font-size: 32px;
+    }
+
+    .container2{
+        width: auto;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        column-gap: 60px;
+        row-gap: 30px;
+    }
+
+    .box{
+        box-sizing: border-box;
+        width: 80%;
+        height: 250px;
+        background-size: cover;
+        border-radius: 10px;
+        padding: 20px 30px;
+        font-size: small;
+        line-height: 15px;
+        text-shadow: -1px -1px 5px rgb(152, 152, 152);
+        transition-duration: 0.5s;
+    }
+
+    .box1{
+        background-position: center;
+    }
+
+    .container1 p{
+        line-height: 25px;
+    }
+
+    .hamburger{
+        margin-left: -40%;
+    }
+}
+
+@media screen and (width < 500px){
+    .menu{
+        position: absolute;
+        top: 20px;
+        left: 40%;
+    }
+
+}
